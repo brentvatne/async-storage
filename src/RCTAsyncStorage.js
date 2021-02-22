@@ -1,5 +1,5 @@
 const {NativeModules, TurboModuleRegistry} = require('react-native');
-const shouldFallbackToLegacyNativeModule = require('./shouldFallbackToLegacyNativeModule');
+const shouldFallbackToLegacyNativeModule = require('./shouldFallbackToLegacyNativeModule').default;
 
 let RCTAsyncStorage =
   NativeModules.PlatformLocalStorage || // Support for external modules, like react-native-windows
